@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling.css">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="pics/favicon.png" sizes="16x16">    
+  </head>
+<body>  
+  <a href="https://css1.seattleu.edu/~glane/website/homepage.html">
+    <img id = "logo" src = "pics/newlogo.png"/>
+  </a>
+  <div class="header">
+    <div class="menuitem">
+      <a href="https://css1.seattleu.edu/~glane/website/homepage.html" id="active">Home</a>
+      <a href="https://css1.seattleu.edu/~glane/website/gamepairs.php" class="btn">Game Pairs</a>
+      <a href="https://css1.seattleu.edu/~glane/website/pokedex.php" class="btn">Pokedexes</a>
+      <a href="https://css1.seattleu.edu/~glane/website/record.php" class="btn">Records</a>
+      <a href="https://css1.seattleu.edu/~glane/website/pokemon.php" class="btn">Pokemon</a>
+      <a href="https://css1.seattleu.edu/~glane/website/list.php" class="btn">List</a>
+      <a href="https://css1.seattleu.edu/~glane/website/pokeball.php" class="btn">Poke Balls</a>  
+      <a href="https://css1.seattleu.edu/~glane/website/sandwich.php" class="btn">Sandwiches</a>
+    </div>
+    <div class="search-container">
+      <form name="searchQuery" action="search.php" method="post" >
+        <input type="text" placeholder="Enter SQL Query Here..." name="search">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  
+  <img id="welcomeImg" src="pics/welcome.png">
+  <h1 class="welcome">WELCOME</h1> 
+  
+  <div class="welcomecontent">
+    <a href="https://css1.seattleu.edu/~glane/website/query1.php" class="query">Query 1</a>
+      <a class="querycontent">Find which games have the Safari Ball.</a>
+    
+    <a href="https://css1.seattleu.edu/~glane/website/query2.php" class="query">Query 2</a>
+      <a class="querycontent">Find the number of Pokémon who have dual typing.</a>
+  
+    <a href="https://css1.seattleu.edu/~glane/website/query3.php" class="query">Query 3</a>
+      <a class="querycontent">Find the Pokémon (national_number and name) that has the smallest national number in the Paldea region.</a>
+
+    <a href="https://css1.seattleu.edu/~glane/website/query4.php" class="query">Query 4</a>
+      <a class="querycontent">Find the primary types that have more than 50 Pokémon with that primary type.</a>
+
+    <a href="https://css1.seattleu.edu/~glane/website/query5.php" class="query">Query 5</a>
+      <a class="querycontent">List the Pokémon (national_number and name) in the games and how many regions they’re in.</a>
+
+  </div>
+  
+  <div class="content">
+      <form name="searchQuery" action="search.php" method="post" >
+        <input type="text" placeholder="Enter SQL Query Here..." name="search">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit">
+      </form>
+  </div>
+  
+  
+  
+  
+  
+  </body>
+</html>
+

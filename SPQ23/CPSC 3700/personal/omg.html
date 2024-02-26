@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--  <meta charset="UTF-8">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="omg.css">
+  <title>About</title>
+  <link rel="icon" type="image/png" href="pics/favicon.PNG" sizes="20x20">    
+</head>
+<body> 
+  <div class="menu" id="ribbon">
+      <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+      <img id="logo" src = "pics/favicon.PNG"/>
+      </a>
+    <div class="dropdown" >
+      <button class="active" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</button>
+    </div>
+    <div class="dropdown" onmouseover="hovering(s)" onmouseout="notHovering(s)">
+      <button class="dropbtn" id="s">SCHOOL</button>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+      </div>
+    </div>
+    <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+      <button class="dropbtn" id="e">EXPERIENCE</button>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+      </div>
+    </div>
+    <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+      <button class="dropbtn"id="c">CONTACT</button>
+    </div>
+    <div onclick="myFunction()">
+      <a  class="icon">☰</a>
+    </div>
+  </div>
+
+  <div id="page">
+    <div id="container">
+      <div id="left">
+        <h1>HELLO!</h1>
+        <h2>I AM GRACE LANE.</h2>
+        <p id="divider">....................................................................</p>
+        <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business and a Minor in Data Science.</p>
+        <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+      </div>
+      <div id="right">
+        <img id="self" src = "pics/me.PNG"/>
+      </div>
+    </div>
+    <footer id="footer">
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+  
+  
+  <script>
+    function hovering(x) {
+      x.style.fontWeight = "bold";
+      x.style.textDecoration = "underline";
+    }
+    
+    function notHovering(x) {
+      x.style.fontWeight = "normal";
+      x.style.textDecoration = "none";
+    }
+    
+    function myFunction() {
+      var x = document.getElementById("ribbon");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
+      }
+    }
+  </script>
+  
+</body>
+</html>

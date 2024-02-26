@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+    <img id="logo" src="pics/favicon.PNG"/>
+  </a>
+  <div class="menu">
+    <div class="options">
+  <div class="dropdown" onmouseover="hovering(a)" onmouseout="notHovering(a)">
+    <a class="dropbtn" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</a>
+  </div>
+  <div class="dropdown">
+    <a class="active" id="s">SCHOOL</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+    <a class="dropbtn" id="e">EXPERIENCE</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+    <a class="dropbtn" id="c">CONTACT</a>
+  </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+  </div>
+</div>
+  
+  <div class="yearPage">
+    <div class="year">
+        <h2>Fall Quarter 2021</h2>
+        <h3>Programming and Problem Solving I</h3>
+        <p>Introduction to programming and computing fundamentals, with emphasis on problem solving, design and style. Prior programming experience is not required. This course introduces fundamental programming concepts such as functional decomposition, stepwise refinement, control structures, loops, functions, primitive and aggregate data types.</p>
+        <h3>Calculus III</h3>
+        <p>Infinite series; Taylor's theorem; vectors; polar coordinates; solid analytic geometry. Graphing calculator required.</p>
+        <h3>The Value of Work</h3>
+        <p>Our topic is work, with reflection, analysis and research on these questions: What meanings do we attach to different kinds of work? How does work affect identity? How does work shape the worker and the larger society? What is the context of the minimum-wage debate in Seattle? What are the conditions of work where the things we "consume" are made, and how do those conditions affect us as consumers?</p>
+      
+        <h2>Winter Quarter 2022</h2>
+        <h3>Programming and Problem Solving II</h3>
+        <p>Continuation of programming and problem solving, including abstract data types (ADTs), dynamic memory, linked lists, stacks, queues, and testing.</p>
+        <h3>Group Piano for Beginners</h3>
+        <p></p>
+        <h3>Visual Culture: Race/Gender/Sex</h3>
+        <p></p>
+      
+        <h2>Spring Quarter 2022</h2>
+        <h3>Data Structures</h3>
+        <p>Fundamental data structures including binary search trees, priority queues, hash tables, and heaps.Â  Abstract data type implementation and design.Â  Code analysis using big-O notation, recursion, and sorting algorithms.</p>
+        <h3>How the World Works</h3>
+        <p></p>
+        <h3>Minds and Machines</h3>
+        <p></p>
+      
+        <h2>Summer Quarter 2022</h2>
+        <h3>World Religions and Catholicism</h3>
+        <p>Hinduism, Buddhism, Judaism, and Islam. The course will present the foundations of Catholic Theology through the study of five key figures: Saint Paul, Saint Augustine, Saint Benedict, Erasmus of Rotterdam, and Saint Ignatius of Loyola. The class will then provide a comparison between Catholicism and the religious traditions selected. Finally, the dialogical relationship of Catholicism to non-Christian religions will be analyzed.</p>
+        <h3>Ethical Reasoning in Business</h3>
+        <p>This course considers both the morally relevant situations a business person may encounter, and the various moral theories that may help inform thinking about those situations. This course includes a sustained discussion of the moral and philosophical elements of the vocation of the business leader, specifically as it relates to three groups: executives and entrepreneurs, managers, and employees.</p>
+      </div>
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  
+function hovering(x) {
+  x.style.fontWeight = "bold";
+  x.style.textDecoration = "underline";
+}
+
+function notHovering(x) {
+  x.style.fontWeight = "normal";
+  x.style.textDecoration = "none";
+}
+</script>
+
+</body>
+</html>

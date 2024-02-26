@@ -1,0 +1,5 @@
+S->xAB
+A->xA|E
+B->yyD|CD
+C->zC|E
+D->x|E

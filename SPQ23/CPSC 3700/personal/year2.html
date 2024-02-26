@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+    <img id="logo" src="pics/favicon.PNG"/>
+  </a>
+  <div class="menu">
+    <div class="options">
+  <div class="dropdown" onmouseover="hovering(a)" onmouseout="notHovering(a)">
+    <a class="dropbtn" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</a>
+  </div>
+  <div class="dropdown">
+    <a class="active" id="s">SCHOOL</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+    <a class="dropbtn" id="e">EXPERIENCE</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+    <a class="dropbtn" id="c">CONTACT</a>
+  </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+  </div>
+</div>
+  
+  <div class="yearPage">
+    <div class="year">
+        <h2>Fall Quarter 2022</h2>
+        <h3>Foundations of Computer Science</h3>
+        <p>Introduction to logic, applications of logic, methods of proof , sets, functions, induction, recurrence relations, graphs, and counting.</p>
+        <h3>Business Statistics</h3>
+        <p>Basic statistical procedures, concepts, and computer applications used in the business world. Descriptive statistics, probability, decision theory, probability distributions, sampling distributions, statistical inference, chi-square analysis, and correlation.</p>
+        <h3>Intro to the Hebrew Bible</h3>
+        <p>The purpose of this class is to introduce students to the multi-faceted world of the Hebrew Bible. In addition to reading and analyzing significant portions of the biblical text, students will become aware of and engage with important issues in the study of the Bible: the application of various methodologies (historical-critical, literary, theological, and gender-sensitive lenses); the existence of various types of literature within the Bible (narrative, poetry, law); the role of the Hebrew Bible in interfaith dialogue; and the significance of the study of "Scripture".</p>
+      
+        <h2>Winter Quarter 2023</h2>
+        <h3>Fundamentals of Databases</h3>
+        <p>Fundamental concepts of database design and applications, including relational database design, entity-relationship (ER) model, standard query language (SQL), transaction management, and triggers. Design and development of applications using databases.</p>
+        <h3>Principles of Macroeconomics</h3>
+        <p>Organization, operation, and control of the American economy in its financial and socio-political settings; problems of inflation, unemployment, taxation, the public debt, money, and banking growth.</p>
+        <h3>From the Margins of Empire</h3>
+        <p></p>
+      
+        <h2>Spring Quarter 2023</h2>
+        <h3>Languages and Computation</h3>
+        <p>Common features, organization and tradeoffs of modern programming languages including types, binding, and memory management. Theoretical foundations of languages and computation including regular expressions, language classification, grammars, and finite state automata.Â  Functional style programming including higher-order functions and closures.</p>
+        <h3>The Art of Web Design</h3>
+        <p>An introduction to website design with emphasis on the area of human computer interaction (HCI). Topics include defining the audience, planning the site, prototyping and testing the design. HCI topics include an introduction to cognitive psychology, user-centered design methodology and memory characteristics as pertains to interface design. Technical aspects of creating a site include basic text markup, scripting languages and other web tools.</p>
+        <h3>Principles of Accounting I: Financial</h3>
+        <p>Introduction to financial accounting concepts with emphasis on the development of the student's ability to understand and interpret financial statements of business entities.</p>
+      </div>
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  
+function hovering(x) {
+  x.style.fontWeight = "bold";
+  x.style.textDecoration = "underline";
+}
+
+function notHovering(x) {
+  x.style.fontWeight = "normal";
+  x.style.textDecoration = "none";
+}
+</script>
+
+</body>
+</html>

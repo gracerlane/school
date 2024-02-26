@@ -1,0 +1,234 @@
+body {
+  margin: 0px;
+}
+
+/* container for where buttons are */
+.menu {
+	font-family: arial, sans-serif;
+	text-align: center;
+  float: right;
+	margin: 3vw 2vw 0 0;
+  position: relative;
+}
+
+#logo{
+  width: 6vw;
+  margin: 2vw 0 0 2vw;
+}
+
+/* active button */
+.active {
+  font-size: 1.7vw;
+  border: none;
+  outline: none;
+  color: #303884;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 1vw;
+  padding: 0;
+	font-weight: bold;
+	text-decoration: underline;  
+  cursor: pointer;
+}
+
+/* buttons in header*/
+.dropdown {
+  float: left;
+}
+
+/* buttons not active*/
+.dropbtn {
+  font-size: 1.7vw;  
+  border: none;
+  outline: none;
+  color: #303884;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 1vw;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* dropdown boxes*/
+.dropdown-content {
+  font: inherit;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10vw;
+  box-shadow: 0vw 1vw 3vw 1vw rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 0vw 0vw 0vw 1vw;
+}
+
+/* dropdown words */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1vw .5vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font: inherit;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+	display: grid;
+  align-items: center; 
+  grid-template-columns: 64vw 34vw;
+}
+
+#self {
+	width: 39vw;
+  float: right;	
+	margin: 2vw 3vw 0 0;
+}
+
+h1 {
+	color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 6vw;
+	margin: 0 8vw 0 5vw;
+}
+
+h2 {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 8vw;
+	margin: 0 5vw 0 5vw;
+}
+
+#divider {
+	color: #303884;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 5.5vw;
+	font-size: 2.5vw;
+}
+
+p {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1.4vw;
+	margin: 2vw 13vw 0 5.5vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #e0edff;
+  text-align: center;
+  padding: 2vw 0vw 2vw 0vw;
+}
+
+footer a {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1vw;
+}
+
+.contact {
+  background-color: #fefefe;
+  width: 30vw;
+  margin: 3vw auto 6vw auto;
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw .5vw 0vw rgba(0,0,0,.1);
+}
+
+.contact h1{
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 1.9vw;
+  margin: 0vw 0vw .8vw 0vw;
+  text-align: center;
+}
+
+.contact p{
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 1.4vw;
+  margin: 0vw;
+}
+
+.contact a{
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 1.4vw;
+  margin: 0vw;
+}
+
+form {
+  margin: 1vw 0vw 0vw 0vw;
+	font-family: arial, sans-serif;
+}
+
+label {
+  color: #303884;
+  font-size: 1.2vw;
+  margin: 0vw;
+}
+
+#name {
+  font-size: 1.3vw;
+  margin: 0vw 0vw 1vw 0vw;
+  color: #cfcfcf;
+  background-color: #ffffff;
+  border-radius: .3vw;
+  border: solid;
+  border-width: .01vw;
+  box-shadow: 0vw 0vw .2vw 0vw rgba(0,0,0,.02);
+  height: 2.5vw;
+  width: 29vw;
+  padding: 0vw 0vw 0vw .4vw;
+}
+
+#email {
+  font-size: 1.3vw;
+  margin: 0vw 0vw 1vw 0vw;
+  color: #cfcfcf;
+  background-color: #ffffff;
+  border-radius: .3vw;
+  border: solid;
+  border-width: .01vw;
+  box-shadow: 0vw 0vw .2vw 0vw rgba(0,0,0,.02);
+  height: 2.5vw;
+  width: 29vw;
+  padding: 0vw 0vw 0vw .4vw;
+}
+
+#submit {
+  font-size: 1vw;
+  margin: 0vw;
+  color: white;
+  background-color: #5d84bf;
+  cursor: pointer;
+  border: hidden;
+  border-radius: .3vw;
+  height: 2.5vw;
+  width: 29.5vw;
+}
+
+#submit:hover {
+  background-color: #303884;
+  cursor: pointer;
+}
+
+
+
+
+

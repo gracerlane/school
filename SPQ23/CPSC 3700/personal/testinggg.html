@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="icon" type="image/png" href="pics/favicon.PNG" sizes="20x20"> 
+  <style>
+  body {
+  margin: 0px;
+}
+
+/* container for where buttons are */
+.menu {
+	font-family: arial, sans-serif;
+	text-align: center;
+  float: right;
+	margin: 3vw 2vw 0 0;
+  position: relative;
+}
+
+#logo{
+  font-size: 2vw;  
+  width: 6vw;
+  border: none;
+  outline: none;
+  margin: 2vw 0 0 2vw;
+  color: #303884;
+  text-decoration: none;
+}
+
+/* active button */
+.active {
+  font-size: 1.7vw;
+  border: none;
+  outline: none;
+  color: #303884;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 1vw;
+  padding: 0;
+	font-weight: bold;
+	text-decoration: underline;  
+  cursor: pointer;
+}
+
+/* buttons in header*/
+.dropdown {
+  float: left;
+}
+
+/* buttons not active*/
+.dropbtn {
+  font-size: 1.7vw;  
+  border: none;
+  outline: none;
+  color: #303884;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 1vw;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* dropdown boxes*/
+.dropdown-content {
+  font: inherit;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10vw;
+  box-shadow: 0vw 1vw 3vw 1vw rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 0vw 0vw 0vw 1vw;
+}
+
+/* dropdown words */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1vw .5vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font: inherit;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#self {
+	width: 39vw;
+  float: right;	
+	margin: 2vw 3vw 0 0;
+}
+
+h1 {
+	color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 6vw;
+	margin: 0 8vw 0 5vw;
+}
+
+h2 {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 8vw;
+	margin: 0 5vw 0 5vw;
+}
+
+#divider {
+	color: #303884;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 5.5vw;
+	font-size: 2.5vw;
+}
+
+p {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1.4vw;
+	margin: 2vw 13vw 0 5.5vw;
+}
+
+.content {
+position: relative;
+min-height: 100vh;
+}
+    
+.container {
+	display: grid;
+  align-items: center; 
+  grid-template-columns: 64vw 34vw;
+  padding-bottom: 5.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #e0edff;
+  padding: 2vw 0vw 2vw 0vw;
+}
+
+footer a {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1vw;
+  margin: 0vw;
+}
+    
+
+  </style>
+</head>
+<body> 
+  <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+    <img id = "logo" src = "pics/favicon.PNG"/>
+  </a>
+  <div class="menu" id="ribbon">
+    <div class="dropdown" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'">
+      <button class="active" id="a">ABOUT</button>
+    </div>
+    <div class="dropdown" onmouseover="hovering(s)" onmouseout="notHovering(s)">
+      <button class="dropbtn" id="s">SCHOOL</button>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+      </div>
+    </div>
+    <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+      <button class="dropbtn" id="e">EXPERIENCE</button>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+      </div>
+    </div>
+    <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+      <button class="dropbtn" id="c">CONTACT</button>
+    </div>
+  </div>
+  
+  
+  <div class="content">
+  <div class="container">
+    <div id="text">
+      <h1>HELLO!</h1>
+      <h2>I AM GRACE LANE.</h2>
+      <p id="divider">....................................................................</p>
+      <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business and a Minor in Data Science.</p>
+      <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+      <p id="divider">....................................................................</p>
+      <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business and a Minor in Data Science.</p>
+      <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+      <p id="divider">....................................................................</p>
+      <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business and a Minor in Data Science.</p>
+      <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+      <p id="divider">....................................................................</p>
+      <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business and a Minor in Data Science.</p>
+      <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+    </div>
+    <div id="image">
+      <img id="self" src = "pics/me.PNG"/>
+    </div>
+  </div>
+    <!--    <div class="footer">-->
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+<!--    </div>-->
+  </div>
+  
+  
+  
+  
+  <script>
+    function hovering(x) {
+      x.style.fontWeight = "bold";
+      x.style.textDecoration = "underline";
+    }
+    
+    function notHovering(x) {
+      x.style.fontWeight = "normal";
+      x.style.textDecoration = "none";
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+#logo{ 
+  width: 8vw;
+  float: left;
+  margin: 2vw 0 0 2vw;
+}
+
+.topnav .menu {
+  float: right;
+}
+
+.topnav .options {
+  float: left;
+  margin: 4vw 2vw 0 2vw;
+}
+
+.topnav .dropdown {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #303884;
+  cursor: pointer;
+}
+
+.topnav .dropbtn {
+  background-color: inherit;
+  margin: 0vw 25px 0vw 0vw;
+}
+
+.topnav a.active {
+  background-color: inherit;
+	font-weight: bold;
+	text-decoration: underline;
+  margin: 0vw 25px 0vw 0vw;
+}
+
+.topnav .icon {
+  display: none;
+  color: #303884;
+  text-decoration: none;
+  margin: 2vw 2vw 0 0;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a.dropbtn {display: none;}
+  .topnav a.active {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .year h2 {
+    font-size: 5vw;
+  }
+  
+  .year h3 {
+    font-size: 4vw;
+  }
+  
+  .year p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .menu {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0vw;
+    padding-bottom: 10px;
+  }
+  .topnav.responsive .options {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 12vw 0 0 0vw;
+    margin: 0vw;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0vw;
+    font-size: 5vw;
+  }
+  .topnav.responsive .active {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 2vw 2vw;
+    background-color: #303884;
+    color: white;
+    margin: 0vw;
+  }
+  .topnav.responsive .dropbtn {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 2vw 2vw;
+    margin: 0vw 0 0 0vw;
+  }
+  
+  .topnav.responsive .dropbtn:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .topnav.responsive .dropdown-content {
+    margin: -10vw 0px 0px 40vw;
+    min-width: 150px;
+    box-shadow: 0vw 1vw 3vw 1vw rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+  
+  .topnav.responsive .dropdown-content a {
+    font-size: 4vw;
+  } 
+}
+
+/* dropdown boxes*/
+.dropdown-content {
+  font: inherit;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 12vw;
+  box-shadow: 0vw 1vw 3vw 1vw rgba(0,0,0,0.2);
+  z-index: 1;
+/*  margin: 2.3vw 0vw 0vw 1vw;*/
+}
+
+/* dropdown words */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: .5vw .5vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font: inherit;
+  font-size: 1.2vw;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* menu */
+
+
+/* home page */
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container #left {
+  margin-top: 6vw;
+  float: left;
+  width: 60%;
+}
+
+.container #right {
+  float: left;
+  width: 35%;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.container #self {
+	width: 40vw;
+  float: right;	
+}
+
+.container h1 {
+	color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 6vw;
+	margin: 0 0vw 0 5vw;
+}
+
+.container h2 {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 7vw;
+	margin: 0 0vw 0 5vw;
+}
+
+.container #divider {
+	color: #303884;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 5vw;
+	font-size: 2.5vw;
+}
+
+.container p {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1.4vw;
+	margin: 1vw 8vw 0 5vw;
+}
+/* home page */
+
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #e0edff;
+  text-align: center;
+  padding: 2vw 0vw 2vw 0vw;
+}
+
+footer a {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	font-size: 1vw;
+}
+/* footer */
+
+
+/* school pages layout */
+.yearPage {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 6rem;
+}
+
+.year {
+  padding-bottom: 6rem;
+}
+
+.year h2 {
+	color: #303884;
+	font-family: arial, sans-serif;
+	margin: 2vw 5vw .7vw 5vw;
+}
+
+.year h3 {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	margin: 0vw 0vw 0 6vw;
+}
+
+.year p {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	margin: 0vw 10vw 1.5vw 6vw;
+}
+/* school pages */
+
+/* experience pages */
+.expPage {
+  position: relative;
+  min-height: 100vh;
+/*  padding-bottom: 2rem;*/
+}
+
+.exp {
+/*  padding-bottom: 6rem;*/
+}
+
+.exp #expL {
+  margin-top: 6vw;
+  float: left;
+  width: 60%;
+}
+
+.exp #expR {
+  float: left;
+  width: 35%;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+#CCB {
+  width: 25%;
+  margin: 0 10% 0 30%;
+}
+
+.exp h2 {
+	color: #303884;
+	font-family: arial, sans-serif;
+	margin: 2vw 5vw .7vw 5vw;
+}
+
+.exp h3 {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	margin: 0vw 0vw 1vw 6vw;
+}
+
+.exp p {
+	color: #5d84bf;
+	font-family: arial, sans-serif;
+	margin: 0vw 10vw .7vw 6vw;
+}
+/* experience */
+
+
+
+/* contact page */
+.content {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2vw;
+}
+.contact {
+  background-color: #fefefe;
+  width: 40vw;
+  margin: 3vw auto 6vw auto;
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw 7px 0vw rgba(0,0,0,.1);
+}
+
+.contact h1{
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 30px;
+  margin: 0vw 0vw 8px 0vw;
+  text-align: center;
+}
+
+.contact p{
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+  margin: 0vw 0 10px 0;
+}
+
+.contact a {
+  color: #303884;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+}
+
+form {
+	font-family: arial, sans-serif;
+}
+
+label {
+  color: #303884;
+  font-size: 20px;
+  margin: 0vw;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: .5vw;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 17px;
+}
+
+#message {
+  height: 200px;
+}
+
+::placeholder {
+  color: #cfcfcf;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  margin: 0vw;
+  color: white;
+  background-color: #5d84bf;
+  cursor: pointer;
+  border: hidden;
+  border-radius: .5vw;
+  height: 50px;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: #303884;
+  cursor: pointer;
+}
+
+

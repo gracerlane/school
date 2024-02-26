@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="collapse.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+    <img id="logo" src="pics/favicon.PNG"/>
+  </a>
+  <div class="menu">
+    <div class="options">
+  <div class="dropdown" >
+    <a class="active" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</a>
+  </div>
+  <div class="dropdown" onmouseover="hovering(s)" onmouseout="notHovering(s)">
+    <a class="dropbtn" id="s">SCHOOL</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+    <a class="dropbtn" id="e">EXPERIENCE</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+    <a class="dropbtn" id="c">CONTACT</a>
+  </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+  </div>
+</div>
+  
+  <div class="page">
+    <div class="container">
+      <div id="text">
+        <h1>HELLO!</h1>
+        <h2>I AM GRACE LANE.</h2>
+        <p id="divider">....................................................................</p>
+        <p>I am a Seattle University Undergraduate studying Computer Science with a Specialization in Business.</p>
+        <p> I am looking to branch out and explore specific fields that could eventually lead to a full-time career. I enjoy new challenges to learn and grow both professionally and as an individual.</p>
+      </div>
+      <div id="image">
+        <img id="self" src = "pics/me.PNG"/>
+      </div>
+    </div>
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  
+function hovering(x) {
+  x.style.fontWeight = "bold";
+  x.style.textDecoration = "underline";
+//  document.getElementById("myTopnav").style.overflow = "visible";
+}
+
+function notHovering(x) {
+  x.style.fontWeight = "normal";
+  x.style.textDecoration = "none";
+}
+</script>
+
+</body>
+</html>

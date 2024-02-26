@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+      <img id="logo" alt="Logo" src="pics/favicon.PNG"/>
+    </a>
+    <div class="menu">
+      <div class="options">
+    <div class="dropdown" onmouseover="hovering(a)" onmouseout="notHovering(a)">
+      <a class="dropbtn" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</a>
+    </div>
+    <div class="dropdown" onmouseover="hovering(s)" onmouseout="notHovering(s)">
+      <a class="dropbtn" id="s">SCHOOL</a>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="active" id="e">EXPERIENCE</a>
+      <div class="dropdown-content">
+        <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+        <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+      </div>
+    </div>
+    <div class="dropdown" onmouseover="hovering(c)" onmouseout="notHovering(c)" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+      <a class="dropbtn" id="c">CONTACT</a>
+    </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </div>
+  </div>
+
+  <div class="expPage">
+    <div class="exp">
+      <div id="expL">
+        <h2>IT Support Specialist Intern</h2>
+        <h3>Coastal Community Bank – Everett, WA | Summers of 2021 & 2022</h3>
+        <p>•	Completed multiple tasks at once with efficiency and accuracy.</p>
+        <p>•	Built and distributed multiple laptops each day to employees.</p>
+        <p>•	Worked in customer service virtually and in-person.</p>
+        <p>•	Worked with Microsoft Office applications daily.</p>
+      </div>
+      <div id="expR">
+        <img id="CCB" alt="Coastal Logo" src = "pics/me.PNG"/>
+      </div>
+
+      <div id="expL">
+        <h2>K-5 Math Tutor</h2>
+        <h3>Seattle University Mathematics (SUM) Corps – Seattle, WA | 01/2022 – 06/2022</h3>
+        <p>•	Completed multiple tasks at once with efficiency and accuracy.</p>
+        <p>•	Built and distributed multiple laptops each day to employees.</p>
+        <p>•	Worked in customer service virtually and in-person.</p>
+        <p>•	Worked with Microsoft Office applications daily.</p>
+      </div>
+      <div id="expR">
+        <img id="CCB" alt="Coastal Logo" src = "pics/me.PNG"/>
+      </div>
+      
+      <div id="expL">
+        <h2>File Clerk</h2>
+        <h3>Dwayne Lane’s Family of Auto Centers – Arlington, WA | 09/2020 – 10/2020 & 12/2022</h3>
+        <p>•	Completed multiple tasks at once with efficiency and accuracy.</p>
+        <p>•	Built and distributed multiple laptops each day to employees.</p>
+        <p>•	Worked in customer service virtually and in-person.</p>
+        <p>•	Worked with Microsoft Office applications daily.</p>
+      </div>
+      <div id="expR">
+        <img id="CCB" alt="Coastal Logo" src = "pics/me.PNG"/>
+      </div>
+      
+      <div id="expL">
+        <h2>Volunteer Camp Counselor</h2>
+        <h3>Camp Providence – Everett, WA | Summers of 2018 & 2019</h3>
+        <p>•	Completed multiple tasks at once with efficiency and accuracy.</p>
+        <p>•	Built and distributed multiple laptops each day to employees.</p>
+        <p>•	Worked in customer service virtually and in-person.</p>
+        <p>•	Worked with Microsoft Office applications daily.</p>
+      </div>
+      <div id="expR">
+        <img id="CCB" alt="Coastal Logo" src = "pics/me.PNG"/>
+      </div>
+        
+    </div>
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  function hovering(x) {
+    x.style.fontWeight = "bold";
+    x.style.textDecoration = "underline";
+  }
+
+  function notHovering(x) {
+    x.style.fontWeight = "normal";
+    x.style.textDecoration = "none";
+  }
+  </script>
+
+</body>
+</html>

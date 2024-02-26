@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>About</title>
+  <link rel="icon" type="image/png" href="pics/favicon.PNG" sizes="20x20">    
+</head>
+<body> 
+<div class="topnav" id="myTopnav">
+  <a href="https://css1.seattleu.edu/~glane/personal/about.html">
+    <img id="logo" src="pics/favicon.PNG"/>
+  </a>
+  <div class="menu">
+    <div class="options">
+  <div class="dropdown" onmouseover="hovering(a)" onmouseout="notHovering(a)">
+    <a class="dropbtn" onclick="location.href='http://css1.seattleu.edu/~glane/personal/about.html'" id="a">ABOUT</a>
+  </div>
+  <div class="dropdown" onmouseover="hovering(s)" onmouseout="notHovering(s)">
+    <a class="dropbtn" id="s">SCHOOL</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/year1.html">1st Year</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/year2.html">2nd Year</a>
+    </div>
+  </div>
+  <div class="dropdown" onmouseover="hovering(e)" onmouseout="notHovering(e)">
+    <a class="dropbtn" id="e">EXPERIENCE</a>
+    <div class="dropdown-content">
+      <a href="http://css1.seattleu.edu/~glane/personal/volunteer.html">Volunteer</a>
+      <a href="http://css1.seattleu.edu/~glane/personal/work.html">Work</a>
+    </div>
+  </div>
+  <div class="dropdown" onclick="location.href='http://css1.seattleu.edu/~glane/personal/contact.html'">
+    <a class="active" id="c">CONTACT</a>
+  </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+  </div>
+</div>
+  
+
+  <div class="content">
+    <div class="contact">
+      <div class="text">
+        <h1>Contact Me</h1>
+        <p>Hello! I would love to hear from you. Please fill out the form below and I will get back to you as soon as possible.</p>
+      </div>
+      <form method="POST" action="http://css1.seattleu.edu/~glane/personal/submit.html">
+        <label for="name">Full Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="First Last">
+        <br>
+        <label for="email">Email Address</label>
+        <br>
+        <input type="text" id="email" name="email" placeholder="email@example.com">
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea type="text" id="message" name="message" placeholder="Type here"></textarea>
+        <br>
+        <input type="submit" id="submit" name="submit" value="Submit"/>
+      </form> 
+    </div>
+    <footer>
+      <a>Find me on Linkedin: 
+        <a href="www.linkedin.com/in/grace-lane-8581401b5">linkedin.com/in/grace-lane-8581401b5</a>
+      </a>
+      <br>
+      <a>Email me:
+        <a href="mailto:grjlane@outlook.com">grjlane@outlook.com</a>
+      </a>
+    </footer>
+  </div>
+  
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  
+function hovering(x) {
+  x.style.fontWeight = "bold";
+  x.style.textDecoration = "underline";
+}
+
+function notHovering(x) {
+  x.style.fontWeight = "normal";
+  x.style.textDecoration = "none";
+}
+</script>
+  
+</body>
+</html>

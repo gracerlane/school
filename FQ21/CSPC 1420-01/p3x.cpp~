@@ -1,0 +1,245 @@
+// Grace Lane
+// p3.cpp
+// 11-04-2021
+// Purpose: The purpose of this program is to play a game of chutes and ladders
+//  with one other opponent. Each player will take turns going back and forth.
+//  They will spin a number between RANGE_MIN and RANGE_MAX. Depending on the
+//  number they spin, some action will be taken. This will repeat until one 
+//  player reaches exactly GOAL. If they go over, their spin will not count.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void welcome();
+// displays welcome message
+
+int spin();
+// returns a valid spin value from RANGE_MIN to RANGE_MAX
+
+int checkLocation(int location);
+// returns value of chute or ladder at current location
+// returns 0 if none
+
+int takeTurn(int position, string name);
+// takes turn for name
+// returns position
+
+void goodbye();
+
+
+const int RANGE_MIN = 1;
+const int RANGE_MAX = 6;
+const int GOAL = 100;
+const char YES = 'y';
+const int PLAYER_MIN = 2;
+const int PLAYER_MAX = 6;
+
+int main() 
+{
+  string players[PLAYER_MAX];  // user input
+  char play = YES;
+  int currentLocation = 0;
+  int numPlayers;
+  
+  int playerLocation[PLAYER_MAX];  
+  
+  int player;                  // current player playing
+  
+  srand(time(0));
+  
+  welcome();
+  cout << endl << endl;
+  cout << "How many people are playing? ";
+  cin >> numPlayers;
+  players[numPlayers];
+  for (int i = 0; i < numPlayers; i++) {
+    cout << "Please enter player's name: ";
+    getline(cin, players[i])
+  }
+  for (int i = 0; i < numPlayers; i++) {
+	playerLocation[i] = 0;
+  }
+  
+  
+  cout << endl << endl;
+  
+  while (play == YES) {
+    cout << "Press enter to play...";
+    cin.get();
+    player = 0;
+	for (int i = 0; i < numPlayers; i++) {
+    while(playerLocation[i] < GOAL) {
+      if(players == 0) {
+        cout << endl << endl;
+        currentLocation = takeTurn(playerLocation[i], players[i]);
+        player = currentLocation;
+        player++;
+      } else {
+        cout << endl << endl;
+        currentLocation = takeTurn(userLocation2, userName2);
+        userLocation2 = currentLocation;
+        player = 0;
+      }
+    }
+	}
+  
+    for (int i = 0; i < numPlayers; i++) {
+	  if(playerLocation[i] == GOAL) {
+        cout << players[i] << " wins!" << endl;
+      }
+	}
+    cout << endl << endl;
+    cout << "Play again? (y/n) ";
+    cin >> play;
+    cin.ignore();
+  }
+  goodbye();
+  return 0;
+}
+
+void welcome()
+{  
+  cout << endl;
+  cout << "Welcome to Chutes and Ladders!" << endl;
+  cout << "You must land on " << GOAL << " exactly to win!" << endl;
+}
+
+int spin()
+{
+  return (rand() % (RANGE_MAX - RANGE_MIN + 1)) + RANGE_MIN;
+}
+
+int checkLocation(int location)
+{
+  int move = location;           // new location moved to if a ladder or chute
+  if(location == 1) {
+	move += 37;
+  } else if(location == 4) {
+    move += 10;
+  } else if(location == 9) {
+	move += 12;
+  } else if(location == 23) {
+	move += 21;
+  } else if(location == 28) {
+    move += 56;
+  } else if(location == 36) {
+	move += 8;
+  } else if(location == 51) {
+	move += 15;
+  } else if(location == 71) {
+    move += 19;
+  } else if(location == 80) {
+	move += 20;
+  } else if(location == 98) {
+    move -= 20;
+  } else if(location == 95) {
+    move -= 20;
+  } else if(location == 93) {
+	move -= 20;
+  } else if(location == 87) {
+	move -= 63;
+  } else if(location == 64) {
+    move -= 4;
+  } else if(location == 62) {
+	move -= 43;
+  } else if(location == 56) {
+	move -= 3;
+  } else if(location == 49) {
+    move -= 38;
+  } else if(location == 48) {
+	move -= 22;
+  } else if(location == 16) {
+	move -= 10;
+  } 
+  return move;
+}
+
+int takeTurn(int location, string name)
+{
+  int moveTo;         // space the user moves to after checking for chute/ladder
+  int playerSpin;     // number player spins
+  int newLocation;    // adding the initail location with the player's spin
+  
+  cout << name << ", you are currently at " << location << "." << endl;
+  cout << "Press enter to spin...";
+  cin.get();
+  playerSpin = spin();
+  newLocation = location + playerSpin;
+  cout << "You spun a(n) " << playerSpin << "." << endl;
+  cout << "You move to " << newLocation << "." << endl;
+  cout << "Press enter to check for a chute or ladder...";
+  cin.get();
+  moveTo = checkLocation(newLocation);
+  
+  if(newLocation == 1) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 4) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 9) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 23) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 28) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 36) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 51) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 71) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 80) {
+	cout << "Congrats! This is a ladder";
+  } else if(newLocation == 98) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 95) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 93) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 87) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 64) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 62) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 56) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 49) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 48) {
+	cout << "Oh no! This is a chute";
+  } else if(newLocation == 16) {
+	cout << "Oh no! This is a chute";
+  } else {
+    cout << "This is neither a chute or ladder";
+  }
+  cout << "! You get to move " << moveTo - newLocation << " spaces." 
+       << endl;
+  
+  cout << "You are now at " << moveTo << "." << endl;
+  
+  if(newLocation > GOAL) {
+	cout << "Sorry, that is more than " << GOAL << "." << endl;
+	moveTo = location;
+	cout << "You are back to " << moveTo << endl;
+  }
+  if(moveTo > GOAL) {
+    cout << "Sorry that is more than " << GOAL << "." << endl;
+    moveTo = location;
+	cout << "You are back to " << moveTo << "." << endl;
+  }
+  if(moveTo == GOAL) {
+	return moveTo;
+  }
+  cout << "Press enter to continue...";
+  cin.get();  
+  return moveTo;
+}
+
+void goodbye() 
+{
+  cout << endl << endl;
+  cout << "Thank you for playing! Come again!";
+  cout << endl << endl;
+}

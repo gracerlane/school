@@ -1,0 +1,64 @@
+// Grace Lane
+// p1.cpp
+// Purpose: The purpose of this program is to allow the user to
+//  input words or numbers to complete a paragraph. The paragraph will be 
+//  printed at the end of the program.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string dogName1;
+string dogName2;
+string ownerName;
+
+int main()
+{
+  cout << endl << endl;
+  cout << "Welcome, user! This is a short word game where you will " << endl;
+  cout << "be asked to input either a word or a number. In the " << endl;
+  cout << "end, the program will print out the final paragraph " << endl;
+  cout << "for you to read!" << endl;
+  cout << endl << endl;
+  
+  cout << "Enter a name:";
+  cin >> dogName1;
+  cout << endl << endl;
+  
+  cout << "Enter another name:";
+  cin >> dogName2;
+  cout << end1 << end1;
+  
+  cout << "Now, enter your name:";
+  cin >> ownerName;
+  
+  
+  return 0;
+}// Grace Lane
+// p1.cpp
+// Purpose: The purpose of this program is to allow the user to
+//  input words or numbers to complete a paragraph. The paragraph will be
+//  printed at the end of the program.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string dogName;
+
+int main()
+{
+  cout << endl << endl;
+  cout << "Welcome, user! This is a short word game where you will " << endl;
+  cout << "be asked to input either a word or a number. In the " << endl;
+  cout << "end, the program will print out the final paragraph " << endl;
+  cout << "for you to read!" << endl;
+  cout << endl << endl;
+
+  cout << "Enter a name: " << endl;
+  cin >> dogName;
+
+  return 0;
+}
